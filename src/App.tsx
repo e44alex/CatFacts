@@ -1,12 +1,10 @@
 import './App.css'
 import {CatFact} from "./compoents/CatFact";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <CatFact />
     </div>
   )
 }
-
-export default App
