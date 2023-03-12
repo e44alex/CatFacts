@@ -1,12 +1,12 @@
-import {sendRequestAsync} from "../utils/backend";
-import {Fact} from "../types/Fact";
+import { sendRequestAsync } from "../utils";
+import { Fact } from "../types/Fact";
 
 const getRandomFact = async (): Promise<Fact> => {
-    return await sendRequestAsync('fact');
+  return await sendRequestAsync('fact');
 }
 
 const catFactsApi = {
-    getRandomFact
+  getRandomFact
 }
 
 export default catFactsApi;
